@@ -1,6 +1,6 @@
 {
   "name": "@clysema/ebrain-iot-modbus",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "bufferpack": "0.0.6",
     "joi": "^17.4.2",
     "load-json-file": "^6.2.0",
-    "modbus-serial": "7.0.3"
+    "modbus-serial": "7.8.1"
   },
   "keywords": [],
   "author": "Víctor Navarro <v.navarro@camposcorporacion.com>",
