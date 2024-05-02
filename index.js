@@ -26,11 +26,7 @@ module.exports = async (app) => {
     let data = {};
     if (process.env.NODE_ENV === 'development') {
         try {
-            const devData = await loadJsonFile(`devdata/modbus.json`);
-            data = Object.keys(devData).map(key => ({
-                label: key,
-                value: devData[key]
-            }));
+            data = await loadJsonFile(`devdata/modbus.json`);
             if (data) app.modbus.data = data;
         } catch (error) {
             app.logger.error(`modbus devdata: ${error.message}`);
