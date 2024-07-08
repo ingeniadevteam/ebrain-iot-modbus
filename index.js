@@ -28,6 +28,7 @@ module.exports = async (app) => {
         try {
             data = await loadJsonFile(`devdata/modbus.json`);
             if (data) app.modbus.data = data;
+            app.modbus.ready = true;
         } catch (error) {
             app.logger.error(`modbus devdata: ${error.message}`);
         }
